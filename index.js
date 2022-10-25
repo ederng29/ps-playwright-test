@@ -3,7 +3,7 @@ import * as playwright from "playwright";
 (async () => {
   const browser = await playwright.chromium.launch({
     ignoreHTTPSErrors: true,
-    headless: false,
+    headless: true,
     devtools: true,
      args: [
       "--no-sandbox", // required to run within some containers
