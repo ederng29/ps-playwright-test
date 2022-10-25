@@ -1,0 +1,17 @@
+{
+  "name": "playwright-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-file": "^2.0.2",
+    "playwright": "^1.26.1"
+  }
+}
