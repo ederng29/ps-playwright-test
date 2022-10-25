@@ -49,10 +49,16 @@ import * as playwright from "playwright";
 
     let security = await response.securityDetails();
 
-    console.log(`security is: ${security}`);
+    //console.log(`security is: ${security}`);
 
-    await page.waitForTimeout(10000);
+    await page.waitForTimeout(1000);
     //await page.screenshot({ path: `example2.png` });
+
+    var loc = await page.locator(".d-inline.base-font.item-desc-text.mb-1h");
+
+    var texto =await loc.allTextContents();
+   console.log(`producto es ${texto}`);
+
     await browser.close();
   } catch (error) {
     console.error(error);
